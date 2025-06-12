@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/Header_Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 60vh;
+    text-align: left;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0;
+    padding-left: 2rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: white;
+    max-width: 800px;
+    margin: auto 1rem 2rem;
+    text-align: left;
+
+}
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 1;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.buttons a {
+    margin: 0.5rem 0;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.3s;
+    width: 300px;
+    text-align: center;
+}
+
+.button-1 {
+    background-color: #f9f9fc;
+    color: #23272A;
+    ;
+}
+
+.button-2 {
+    background-color: #23272A;
+    color: #fafafc;
+}
+
+.buttons a:hover {
+    transform: scale(1.05);
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section,
+#just-chillin h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #23272A;
+}
+
+
+@media screen and (min-width: 720px) {
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../images/Header_Background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 60vh;
+        text-align: center;
+        padding: 4rem 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header p {
+        font-size: 1rem;
+        max-width: 800px;
+        margin: 0 auto 2rem;
+        color: white;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+    }
+
+
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons a {
+        margin: 0 1rem;
+        width: auto;
+        padding: 1rem 2rem;
+    }
+
+
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem 2rem;
+        text-align: center;
+    }
+
+    section img {
+        width: 50%;
+        height: auto;
+    }
+
+    section div {
+        width: 50%;
+    }
+
+    section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    section p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    #study-group {
+        flex-direction: row;
+    }
+
+    #voice-conect {
+        flex-direction: row-reverse;
+    }
+
+    #coach {
+        flex-direction: row;
+    }
+
+    #just-chillin {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #just-chillin div,
+    #just-chillin img {
+        width: 100%;
+    }
+
+
+    #just-chillin h2 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #just-chillin p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin-bottom: 0.5rem;
+    }
+
+    #just-chillin img {
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+        padding: 2rem 0;
+        background-color: #23272A;
+    }
+}
